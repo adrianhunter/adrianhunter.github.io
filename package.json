@@ -1,0 +1,35 @@
+{
+  "name": "adrianhunter.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "bankai start -p 8080 --open",
+    "build": "bankai build && gh-pages -d dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianhunter/adrianhunter.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianhunter/adrianhunter.github.io/issues"
+  },
+  "homepage": "https://github.com/adrianhunter/adrianhunter.github.io#readme",
+  "dependencies": {
+    "choo": "^3.2.0",
+    "es2020": "^1.1.8",
+    "normalize.css": "^4.2.0",
+    "sheetify": "^5.0.5"
+  },
+  "browserify": {
+    "transform": [
+      "es2020"
+    ]
+  }
+
+}
+
+
